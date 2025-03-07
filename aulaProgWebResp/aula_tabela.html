@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Tabela</title>
+</head>
+<style>
+body {
+    background-color: lightgray;
+}
+
+    h1.ex1 {
+    text-align: center;
+    background-color: green;
+    }
+
+    table.ex1 {
+        width: 450px;
+        margin: auto;
+        border: 3px solid black;
+        padding: 2px;
+    }
+
+    caption.ex1 {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 8px;
+    }
+
+    th, td {
+            border: 1px solid black;
+            padding: 8px;
+            font-size: 20px;
+    }
+
+    h1.ex2 {
+            text-align: center;
+            background-color: blue;
+    }
+
+    table.ex2 {
+        width: 450px;
+        margin: auto;
+        border: 3px solid black;
+        padding: 3px;
+    }
+
+    caption.ex2 {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 8px;
+    }
+
+    th.ex2 {
+        background-color: gray;
+        border: 2px solid black;
+    }
+</style>
+
+<body>
+    <h1 class="ex1">Exercicio 1</h1>
+    <table class="ex1">
+        <colgroup>
+            <col class="marca">
+            <col class="modelo">
+            <col class="ano">
+            <col class="valor">
+        </colgroup>
+        <caption class="ex1"> Veiculos</caption>
+        <tr>
+            <th scope="col">Marca:</th>
+            <th scope="col">Modelo:</th>
+            <th scope="col">Ano:</th>
+            <th scope="col">Valor:</th>
+        </tr>
+        <tr>
+            <td>Volkswagen</td>
+            <td>Golf</td>
+            <td>2009</td>
+            <td>R$38.500</td>
+        </tr>
+        <tr>
+            <td>Fiat</td>
+            <td>Palio</td>
+            <td>210</td>
+            <td>R$19.700</td>
+        </tr>
+        <tr>
+            <td>Honda</td>
+            <td>Civic</td>
+            <td>2012</td>
+            <td>R$61.500</td>
+        </tr>
+        <tr>
+            <td colspan="4">O melhor preço da região</td>
+        </tr>
+    </table>
+    <br> <br>
+    <h1 class="ex2"> Exercicio 2</h1>
+    <table class="ex2">
+        <caption class="ex2">Catálago de Metal & Cia</caption>
+        <tr>
+            <th scope="col" colspan="4" class="ex2">Tabela de preços</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Seminovos</td>
+            <td>Trompete</td>
+            <td>Trombone</td>
+            <td>Trompa</td>
+        </tr>
+        <tr>
+            <td>$500</td>
+            <td>$640</td>
+            <td>$650</td>
+        </tr>
+        <tr>
+            <td colspan="4"> Visite nossa loja</td>
+        </tr>
+    </table>
+    <br> <br>
+</body>
+</html>
