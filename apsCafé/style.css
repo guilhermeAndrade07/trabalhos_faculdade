@@ -14,3 +14,50 @@ header {
     background-color: #612F00;
     padding: 10px;
 }
+
+nav{
+    background-color: #da6b039a;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+a:hover{
+    font-size: 19px;
+}
+
+.brasil{
+    margin: 8px;
+    display: flex;
+    flex-flow: flex wrap;
+    align-items: center;
+}
+
+.brasil img{
+    margin: 10px;
+}
+
+.brasil h2 {
+    margin-top: 20px;
+}
+
+.brasil p {
+    text-indent: 10px;
+}
+
+.produtores{
+
+}
+
+.produtores h2{
+    text-align: center;
+    margin-top: 20px;
+}
