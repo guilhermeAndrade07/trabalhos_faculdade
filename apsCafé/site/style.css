@@ -58,3 +58,19 @@ a:hover{
     text-align: center;
     margin-top: 20px;
 }
+
+.produtores {
+    margin: 8px;
+    display: flex;
+    flex-flow: flex wrap;
+    align-items: center;
+}
+
+.produtores img{
+    margin: 10px;
+}
+
+
+.produtores p {
+    text-indent: 10px;
+}
