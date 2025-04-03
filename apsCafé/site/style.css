@@ -34,6 +34,11 @@ a:hover{
     font-size: 19px;
 }
 
+main {
+    text-align: center;
+    margin: 10px;
+}
+
 .brasil{
     margin: 8px;
     display: flex;
@@ -53,24 +58,53 @@ a:hover{
     text-indent: 10px;
 }
 
-
-.produtores h2{
+#mundial{
     text-align: center;
-    margin-top: 20px;
+    margin: 20px;
+    padding: 10px;
 }
 
-.produtores {
+.produtores1 {
     margin: 8px;
     display: flex;
     flex-flow: flex wrap;
     align-items: center;
 }
 
-.produtores img{
+.produtores1 img{
     margin: 10px;
 }
 
+.produtores1 p {
+    text-indent: 10px;
+}
 
-.produtores p {
+.produtores2 {
+    margin: 8px;
+    display: flex;
+    flex-flow: flex wrap;
+    align-items: center;
+}
+
+.produtores2 img{
+    margin: 10px;
+}
+
+.produtores2 p {
+    text-indent: 10px;
+}
+
+.produtores3 {
+    margin: 8px;
+    display: flex;
+    flex-flow: flex wrap;
+    align-items: center;
+}
+
+.produtores3 img{
+    margin: 10px;
+}
+
+.produtores3 p {
     text-indent: 10px;
 }

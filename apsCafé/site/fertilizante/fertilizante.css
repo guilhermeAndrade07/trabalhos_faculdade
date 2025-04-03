@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #135E1A;
+}
+
+header {
+    text-align: center;
+    background-color: #612F00;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 8px;
+}
+
+nav{
+    background-color: #da6b039a;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+a:hover{
+    font-size: 19px;
+}
+
+main {
+    text-align: center;
+    margin: 10px;
+}
