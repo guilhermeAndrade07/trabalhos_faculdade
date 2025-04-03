@@ -40,7 +40,9 @@ a:hover{
 
 main {
     text-align: center;
-    margin: 10px;
+    margin: 12px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .brasil{
@@ -51,7 +53,8 @@ main {
 }
 
 .brasil img{
-    margin: 10px;
+    border: 5px solid #612F00;
+    
 }
 
 .brasil h2 {
@@ -76,7 +79,7 @@ main {
 }
 
 .produtores1 img{
-    margin: 10px;
+    border: 5px solid #612F00;
 }
 
 .produtores1 p {
@@ -91,7 +94,7 @@ main {
 }
 
 .produtores2 img{
-    margin: 10px;
+    border: 5px solid #612F00;
 }
 
 .produtores2 p {
@@ -106,9 +109,16 @@ main {
 }
 
 .produtores3 img{
-    margin: 10px;
+    border: 5px solid #612F00;
 }
 
 .produtores3 p {
     text-indent: 10px;
+}
+
+footer{
+    background-color: #612F00;
+    padding: 8px;
+    text-align: center;
+    color: white;
 }

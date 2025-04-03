@@ -42,3 +42,14 @@ main {
     text-align: center;
     margin: 10px;
 }
+
+
+footer{
+    background-color: #612F00;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
