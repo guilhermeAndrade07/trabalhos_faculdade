@@ -43,6 +43,10 @@ main {
     margin: 10px;
 }
 
+img{
+    margin: 10px;
+    border: 5px solid #612F00;
+}
 
 footer{
     background-color: #612F00;

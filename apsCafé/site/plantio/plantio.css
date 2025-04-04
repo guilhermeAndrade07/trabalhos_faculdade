@@ -39,10 +39,20 @@ a:hover{
 }
 
 main {
+    margin: 10px;
+}
+
+.plantio h2 {
     text-align: center;
     margin: 10px;
 }
 
+.listas {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
 
 footer{
     background-color: #612F00;
