@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    color: white;
 }
 
 body {
@@ -29,7 +30,7 @@ nav{
 }
 
 nav a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 17px;
 }
@@ -43,12 +44,15 @@ main {
     margin: 10px;
 }
 
+h2{
+    color: black;
+}
 
 footer{
     background-color: #612F00;
     padding: 8px;
     text-align: center;
-    color: white;
+    color: lightgray;
     bottom: 0;
     position: fixed;
     width: 100%;

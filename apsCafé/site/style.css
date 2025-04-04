@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    color: white;
 }
 
 body {
@@ -29,7 +30,7 @@ nav{
 }
 
 nav a {
-    color: black;
+    color: rgba(255, 255, 255, 0.788);
     text-decoration: none;
     font-size: 17px;
 }
@@ -54,11 +55,11 @@ main {
 
 .brasil img{
     border: 5px solid #612F00;
-    
 }
 
 .brasil h2 {
     margin-top: 20px;
+    color: black;
 }
 
 .brasil p {
@@ -76,6 +77,10 @@ main {
     display: flex;
     flex-flow: flex wrap;
     align-items: center;
+}
+
+#mundial {
+    color: black;
 }
 
 .produtores1 img{
@@ -120,5 +125,5 @@ footer{
     background-color: #612F00;
     padding: 8px;
     text-align: center;
-    color: white;
+    color: lightgray;
 }
