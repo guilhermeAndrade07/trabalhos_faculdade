@@ -46,80 +46,75 @@ main {
     margin-bottom: 30px;
 }
 
-.brasil{
-    margin: 8px;
-    display: flex;
-    flex-flow: flex wrap;
-    align-items: center;
-}
-
-.brasil img{
-    border: 5px solid #612F00;
-}
-
-.brasil h2 {
-    margin-top: 20px;
-    color: black;
-}
-
-.brasil p {
-    text-indent: 10px;
-}
-
-#mundial{
+.subtitulo{
     text-align: center;
     margin: 20px;
     padding: 10px;
-}
-
-.produtores1 {
-    margin: 8px;
-    display: flex;
-    flex-flow: flex wrap;
-    align-items: center;
-}
-
-#mundial {
     color: black;
 }
 
-.produtores1 img{
-    border: 5px solid #612F00;
-}
+section.brasil-conteiner{
+    padding: 20px;
 
-.produtores1 p {
-    text-indent: 10px;
-}
-
-.produtores2 {
-    margin: 8px;
     display: flex;
-    flex-flow: flex wrap;
+    flex-flow: column nowrap;
     align-items: center;
 }
 
-.produtores2 img{
+article.media-text{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+article > div.media{
+    flex: 1 0 350px;
+}
+
+article > div.text {
+    flex: 1 1 400px;
+}
+
+div.text > p {
+    text-indent: 20px;
+    margin-bottom: 10px;
+}
+
+div.media > img{
+    display: block;
+    margin: auto;
+    width: 350px;
     border: 5px solid #612F00;
 }
 
-.produtores2 p {
-    text-indent: 10px;
-}
+section.produtores-conteiner{
+    padding: 20px;
 
-.produtores3 {
-    margin: 8px;
     display: flex;
-    flex-flow: flex wrap;
+    flex-flow: column nowrap;
     align-items: center;
 }
 
-.produtores3 img{
-    border: 5px solid #612F00;
+article.text-media{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
-.produtores3 p {
-    text-indent: 10px;
+section.produtores2-conteiner{
+    padding: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
+
+article.media-text2{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
 
 footer{
     background-color: #612F00;
