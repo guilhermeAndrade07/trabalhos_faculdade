@@ -47,8 +47,13 @@ main {
 
 h2 {
     text-align: center;
-    margin: 15px10x 10px 0px;
+    margin: 15px;
     color: black;
+}
+
+p{
+    text-indent: 10px;
+    margin-bottom: 10px;
 }
 
 .listas {
@@ -63,7 +68,5 @@ footer{
     padding: 8px;
     text-align: center;
     color: lightgray;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
+    margin-top: 10px;
 }
