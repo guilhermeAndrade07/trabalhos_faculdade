@@ -42,11 +42,12 @@ a:hover{
 }
 
 main {
-    margin: 10px;
+    margin: 15px;
 }
 
 h2 {
     text-align: center;
+    text-shadow: 0.5px 0.5px 1px black;
     margin: 15px;
     color: black;
 }
@@ -55,13 +56,53 @@ p{
     text-indent: 10px;
     margin-bottom: 10px;
 }
+section.plantio1 {
+    padding: 15px;
+}
 
 .listas {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+    margin: 15px 0px;
 }
+
+section.conteiner{
+    padding: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+
+article > div.text{
+    flex: 1 1 300px;
+}
+
+article > div.media{
+    flex: 1 0 300px;
+}
+
+div.text > h3 {
+    color: black;
+    text-shadow: 1px 0px 2px white;
+    font-size: 22px;
+}
+
+div.media > img{
+    display: block;
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
 
 footer{
     background-color: #612F00;
