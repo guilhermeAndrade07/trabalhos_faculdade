@@ -1,15 +1,5 @@
 @charset "UTF-8";
 
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-    }
-    
-    nav a {
-        margin-top: 5px;
-    }
-}
-
 * {
     margin: 0px;
     padding: 0px;
@@ -123,4 +113,14 @@ div.button > input {
     width: 80px;
     cursor: pointer;
     margin-top: 3px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    
+    nav a {
+        margin: 5px;
+    }
 }
