@@ -49,75 +49,20 @@
     let formularioValido = true;
 
     campos.forEach(function(campo) {
-      if (!campo.value.trim()) {
-        formularioValido = false;
-        campo.style.border = '1px solid red'; // Destaque visual para o campo vazio
-      } else {
-        campo.style.border = ''; // Remove o destaque se estiver preenchido
-      }
-    });
-
-    if (!formularioValido) {
-      e.preventDefault(); // Impede o envio do formulário
-      alert('Por favor, preencha todos os campos obrigatórios.');
-    }
-  });
-</script>
-O que está acontecendo:
-O formulário tem campos com required.
-
-Ao tentar enviar, o script checa se todos os campos obrigatórios estão preenchidos.
-
-Se algum estiver vazio, a borda fica vermelha, exibe um alerta, e impede o envio.
-
-Se quiser adaptar para usar com frameworks como React ou com jQuery, posso te ajudar também!
-
-
-
-
-
-
-
-Você disse:
-utilizar window.alert ao enviar e se precisar preencher algo vazio
-
-
-O ChatGPT disse:
-Claro! Aqui está o código atualizado para mostrar um window.alert tanto quando o formulário for enviado com sucesso quanto quando houver campos vazios:
-
-✅ HTML + JavaScript com window.alert:
-html
-Copiar
-Editar
-<form id="meuFormulario">
-  <input type="text" name="nome" placeholder="Nome" required><br>
-  <input type="email" name="email" placeholder="Email" required><br>
-  <textarea name="mensagem" placeholder="Mensagem" required></textarea><br>
-  <button type="submit">Enviar</button>
-</form>
-
-<script>
-    document.getElementById('meuFormulario').addEventListener('submit', function(e) {
-        const campos = this.querySelectorAll('[required]');
-        let formularioValido = true;
-
-    campos.forEach(function(campo) {
         if (!campo.value.trim()) {
             formularioValido = false;
-            campo.style.border = '1px solid red';
+            campo.style.border = '1px solid red'; // Destaque visual para o campo vazio
         } else {
-        campo.style.border = '';
+            campo.style.border = ''; // Remove o destaque se estiver preenchido
         }
     });
 
     if (!formularioValido) {
-      e.preventDefault(); // Impede envio
-        window.alert('Por favor, preencha todos os campos obrigatórios.');
-        } else {
-        window.alert('Formulário enviado com sucesso!');
-      // O formulário será enviado normalmente após o alert
-        }
+        e.preventDefault(); // Impede o envio do formulário
+            alert('Por favor, preencha todos os campos obrigatórios.');
+    }
     });
     </script>
+
 </body>
 </html>
