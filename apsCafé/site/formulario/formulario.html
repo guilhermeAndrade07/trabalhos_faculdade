@@ -45,23 +45,26 @@
     </footer>
     <script>
         document.getElementById('meuFormulario').addEventListener('submit', function(e) {
-    const campos = this.querySelectorAll('[required]');
-    let formularioValido = true;
+            const campos = this.querySelectorAll('[required]');
+            let formularioValido = true;
 
-    campos.forEach(function(campo) {
-        if (!campo.value.trim()) {
+        campos.forEach(function(campo) {
+            if (!campo.value.trim()) {
             formularioValido = false;
-            campo.style.border = '1px solid red'; // Destaque visual para o campo vazio
+            campo.style.border = '1px solid red';
         } else {
-            campo.style.border = ''; // Remove o destaque se estiver preenchido
+        campo.style.border = '';
         }
-    });
+        });
 
-    if (!formularioValido) {
-        e.preventDefault(); // Impede o envio do formulário
-            alert('Por favor, preencha todos os campos obrigatórios.');
-    }
-    });
+        if (!formularioValido) {
+            e.preventDefault(); // Impede envio
+            window.alert('Por favor, preencha todos os campos obrigatórios.');
+        } else {
+            window.alert('Formulário enviado com sucesso!');
+            // O formulário será enviado normalmente após o alert
+        }   
+        });
     </script>
 
 </body>
