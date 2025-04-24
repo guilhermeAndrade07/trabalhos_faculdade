@@ -86,8 +86,8 @@ article > div.media{
 
 div.text > h3 {
     color: black;
-    text-shadow: 1px 0px 2px white;
-    font-size: 22px;
+    text-shadow: 1px 0px 1px white;
+    font-size: 25px;
 }
 
 div.text > p {
