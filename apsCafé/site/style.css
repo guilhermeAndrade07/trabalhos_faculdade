@@ -126,3 +126,16 @@ footer{
     text-align: center;
     color: lightgray;
 }
+
+@media screen and (max-width: 600px) {
+    nav{
+        padding: 3px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 5px 0px;
+    }
+}

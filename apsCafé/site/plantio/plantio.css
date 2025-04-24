@@ -114,12 +114,23 @@ article > div.text-prod{
     margin-bottom: 10px;
 }
 
-
-
 footer{
     background-color: #612F00;
     padding: 8px;
     text-align: center;
     color: lightgray;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    nav{
+        padding: 3px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 5px 0px;
+    }
 }
