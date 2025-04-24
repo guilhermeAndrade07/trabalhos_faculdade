@@ -21,7 +21,7 @@
         <h2> Tem interesse em começar <br> o seu próprio plantio de cafe?</h2>
         <h3>Preencha seus dados e dê o primeiro passo <br> rumo à novidade que vai transformar sua vida!</h3>
         <section class="form-conteiner">
-            <form action="#" method="post" autocomplete="on">
+            <form action="#" method="post" autocomplete="on" id="meuFormulario">
                 <div class="dados">
                     <label for="inome">Nome completo: </label> <br>
                     <input type="text" name="nome" id="inome" placeholder="Digite seu nome" required>
@@ -35,7 +35,7 @@
                     <input type="tel" name="tel" id="itel" placeholder="(00) 00000-0000" required minlength="10" maxlength="11">
                 </div>
                 <div class="button">
-                    <input type="submit" value="enviar">
+                    <input type="submit" value="enviar" onclick="enviar()">
                 </div>
             </form>
         </section>
@@ -43,5 +43,81 @@
     <footer>
         <p>&copy Lid´s Coffee por André Porto, Guilherme Morais e Henrick de Almeida</p>
     </footer>
+    <script>
+        document.getElementById('meuFormulario').addEventListener('submit', function(e) {
+    const campos = this.querySelectorAll('[required]');
+    let formularioValido = true;
+
+    campos.forEach(function(campo) {
+      if (!campo.value.trim()) {
+        formularioValido = false;
+        campo.style.border = '1px solid red'; // Destaque visual para o campo vazio
+      } else {
+        campo.style.border = ''; // Remove o destaque se estiver preenchido
+      }
+    });
+
+    if (!formularioValido) {
+      e.preventDefault(); // Impede o envio do formulário
+      alert('Por favor, preencha todos os campos obrigatórios.');
+    }
+  });
+</script>
+O que está acontecendo:
+O formulário tem campos com required.
+
+Ao tentar enviar, o script checa se todos os campos obrigatórios estão preenchidos.
+
+Se algum estiver vazio, a borda fica vermelha, exibe um alerta, e impede o envio.
+
+Se quiser adaptar para usar com frameworks como React ou com jQuery, posso te ajudar também!
+
+
+
+
+
+
+
+Você disse:
+utilizar window.alert ao enviar e se precisar preencher algo vazio
+
+
+O ChatGPT disse:
+Claro! Aqui está o código atualizado para mostrar um window.alert tanto quando o formulário for enviado com sucesso quanto quando houver campos vazios:
+
+✅ HTML + JavaScript com window.alert:
+html
+Copiar
+Editar
+<form id="meuFormulario">
+  <input type="text" name="nome" placeholder="Nome" required><br>
+  <input type="email" name="email" placeholder="Email" required><br>
+  <textarea name="mensagem" placeholder="Mensagem" required></textarea><br>
+  <button type="submit">Enviar</button>
+</form>
+
+<script>
+    document.getElementById('meuFormulario').addEventListener('submit', function(e) {
+        const campos = this.querySelectorAll('[required]');
+        let formularioValido = true;
+
+    campos.forEach(function(campo) {
+        if (!campo.value.trim()) {
+            formularioValido = false;
+            campo.style.border = '1px solid red';
+        } else {
+        campo.style.border = '';
+        }
+    });
+
+    if (!formularioValido) {
+      e.preventDefault(); // Impede envio
+        window.alert('Por favor, preencha todos os campos obrigatórios.');
+        } else {
+        window.alert('Formulário enviado com sucesso!');
+      // O formulário será enviado normalmente após o alert
+        }
+    });
+    </script>
 </body>
 </html>
