@@ -28,12 +28,14 @@ nav{
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
+    
 }
 
 nav a {
     color: rgba(255, 255, 255, 0.788);
     text-decoration: none;
     font-size: 19px;
+
 }
 
 a:hover{
@@ -60,7 +62,7 @@ h3 {
 }
 
 section.form-conteiner{
-    background-color: white;
+    background-color: #da6b039a;
     padding: 15px;
     width: 215px;
     margin: auto;
@@ -74,20 +76,22 @@ form{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    
 }
 
 div.dados {
     margin: 5px;
     text-align: center;
     padding: 3px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 div.dados > label{
     color: black;
     font-weight: bold;
     font-size: 1.1em;
-    margin-bottom: 5px;
+    margin-bottom: px;
 }
 
 div.dados > input{
@@ -97,7 +101,7 @@ div.dados > input{
     border-radius: 5px;
     height: 100%;
     width: 100%;
-    margin-top: 3px;
+    margin: 5px 0px;
     color: black;
 }
 
@@ -115,12 +119,9 @@ div.button > input {
     margin-top: 3px;
 }
 
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-    }
-    
-    nav a {
-        margin: 5px;
-    }
+footer{
+    background-color: #612F00;
+    padding: 8px;
+    text-align: center;
+    color: lightgray;
 }
