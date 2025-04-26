@@ -15,6 +15,7 @@ html, body {
 
 header {
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
     background-color: #612F00;
     padding: 10px;
     display: flex;
@@ -48,6 +49,7 @@ a:hover{
 main{
     margin: 20px 15px;
     flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h2{
