@@ -47,6 +47,7 @@ a:hover{
 
 main{
     margin: 20px 15px;
+    flex: 1;
 }
 
 h2{
