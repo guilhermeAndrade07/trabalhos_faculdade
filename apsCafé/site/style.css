@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+:root {
+    --fonte-header: "Merienda", cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -12,7 +18,7 @@ body {
 
 header {
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--fonte-header);
     background-color: #612F00;
     padding: 10px;
     display: flex;
