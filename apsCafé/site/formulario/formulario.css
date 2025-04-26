@@ -107,7 +107,21 @@ div.dados > input{
     color: black;
 }
 
+.button {
+    padding: 5px;
+}
 
+div.button > input {
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: #18b1289a;
+    color: black;
+    width: 80px;
+    cursor: pointer;
+    margin-top: 3px;
+    border: 2px solid black;
+}
 
 footer{
     background-color: #612F00;

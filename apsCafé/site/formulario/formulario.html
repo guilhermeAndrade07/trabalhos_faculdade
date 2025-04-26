@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saiba Mais...</title>
     <link rel="shortcut icon" href="../imagens/Lid´s.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="formulario.css">
 </head>
 <body>
@@ -35,7 +34,7 @@
                     <label for="itel">Telefone: </label> <br>
                     <input type="tel" name="tel" id="telefone" placeholder="(00) 00000-0000" required minlength="10" maxlength="15">
                 </div>
-                <div class="btn">
+                <div class="button">
                     <input type="submit" value="enviar" class="btn btn-success" onclick="enviar()">
                 </div>
             </form>
@@ -44,7 +43,7 @@
     <footer>
         <p>&copy Lid´s Coffee por André Porto, Guilherme Morais e Henrick de Almeida</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js">
+    <script>
         document.getElementById('meuFormulario').addEventListener('submit', function(e) {
             const campos = this.querySelectorAll('[required]');
             let formularioValido = true;
