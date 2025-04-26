@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saiba Mais...</title>
     <link rel="shortcut icon" href="../imagens/Lid´s.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="formulario.css">
 </head>
 <body>
@@ -21,7 +22,7 @@
         <h2> Tem interesse em começar <br> o seu próprio plantio de cafe?</h2>
         <h3>Preencha seus dados e dê o primeiro passo <br> rumo à novidade que vai transformar sua vida!</h3>
         <section class="form-conteiner">
-            <form action="#" method="post" autocomplete="on" id="meuFormulario">
+            <form action="../index.html" method="post" autocomplete="on" id="meuFormulario">
                 <div class="dados">
                     <label for="inome">Nome completo: </label> <br>
                     <input type="text" name="nome" id="inome" placeholder="Digite seu nome" required>
@@ -34,8 +35,8 @@
                     <label for="itel">Telefone: </label> <br>
                     <input type="tel" name="tel" id="telefone" placeholder="(00) 00000-0000" required minlength="10" maxlength="15">
                 </div>
-                <div class="button">
-                    <input type="submit" value="enviar" onclick="enviar()">
+                <div class="btn">
+                    <input type="submit" value="enviar" class="btn btn-success" onclick="enviar()">
                 </div>
             </form>
         </section>
@@ -43,7 +44,7 @@
     <footer>
         <p>&copy Lid´s Coffee por André Porto, Guilherme Morais e Henrick de Almeida</p>
     </footer>
-    <script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js">
         document.getElementById('meuFormulario').addEventListener('submit', function(e) {
             const campos = this.querySelectorAll('[required]');
             let formularioValido = true;
