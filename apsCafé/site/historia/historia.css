@@ -66,6 +66,7 @@ h2{
 
 p{
     text-indent: 20px;
+    text-align: justify;
     margin-bottom: 10px;
 }
 
@@ -103,6 +104,6 @@ footer{
 
 @media screen and (max-width: 650px) {
     div.media > img{
-        width: 350px;
+        width: 325px;
     }
 }
