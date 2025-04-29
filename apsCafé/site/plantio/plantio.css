@@ -95,6 +95,7 @@ article > div.media{
 div.text > h3 {
     color: black;
     text-shadow: 1px 0px 1px white;
+    text-decoration: underline;
     font-size: 25px;
 }
 
