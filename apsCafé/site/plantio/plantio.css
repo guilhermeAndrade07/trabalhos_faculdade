@@ -123,9 +123,29 @@ article > div.text-prod{
     margin-bottom: 10px;
 }
 
+article > div.mediac{
+    flex: 1 0 300px;
+}
+
+div.mediac > img{
+    width: 450px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px black;
+    border: 5px solid #612F00; 
+    margin-top: 30px;
+}
+
 footer{
     background-color: #612F00;
     padding: 8px;
     text-align: center;
     color: lightgray;
+}
+
+@media screen and (max-width: 650px) {
+    div.mediac > img{
+        width: 325px;
+    }
 }
