@@ -52,7 +52,7 @@ a:hover{
 }
 
 main {
-    margin: 15px;
+    margin: 20px 30px;
     font-family: Arial, Helvetica, sans-serif;
     flex: 1;
 }
@@ -60,7 +60,7 @@ main {
 h2{
     text-align: center;
     text-shadow: 0.5px 0.5px 1px black;
-    margin: 15px;
+    margin-bottom: 15px;
     color: black;
 }
 
@@ -70,7 +70,6 @@ p{
 }
 
 section.historia{
-    padding: 20px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
